@@ -7,10 +7,10 @@ public class ej11 {
 
 	public static void main(String[] args) {
 		
-		/*11. Programa que lee nombre y aÒo de nacimiento de una serie de alumnos hasta introducir
-		como nombre de alumno ìfinî. En ese momento mostrar· la edad media de los alumnos y
-		el nombre del alumno menor. NOTA: Al introducir como nombre ìfinî, no nos ha de pedir el
-		aÒo de nacimiento.*/
+		/*11. Programa que lee nombre y a√±o de nacimiento de una serie de alumnos hasta introducir
+		como nombre de alumno "fin". En ese momento mostrar√° la edad media de los alumnos y
+		el nombre del alumno menor. NOTA: Al introducir como nombre "fin", no nos ha de pedir el
+		a√±o de nacimiento*/
 		
 		String nombre;
 		String nombreMenor ="";
@@ -23,7 +23,7 @@ public class ej11 {
 		int menor = Integer.MAX_VALUE;
 		Scanner sc = new Scanner(System.in);
 		
-		//Pedimos nombre y aÒo de nacimiento
+		//Pedimos nombre y a√±o de nacimiento
 		
 		do {
 			
@@ -34,7 +34,7 @@ public class ej11 {
 			break;
 		}
 		
-		System.out.println("Introduce el aÒo del alumno");
+		System.out.println("Introduce el a√±o del alumno");
 		ano_nacimiento = Integer.valueOf(sc.nextLine());
 		
 		edad = ano_actual - ano_nacimiento;
