@@ -30,10 +30,18 @@ public class Alumno {
 		System.out.println(mensaje);
 	}
 	
-	public int sumar(int numero1, int numero2) {
+	public int sumarNotas(int nota1, int nota2) {
 		int resultado;
 		
-		resultado = numero1 + numero2;
+		resultado = nota1 + nota2;
+		
+		return resultado;
+	}
+	
+	public float sumarNotas(float nota1, float nota2) {
+		float resultado;
+		
+		resultado = nota1 + nota2;
 		
 		return resultado;
 	}

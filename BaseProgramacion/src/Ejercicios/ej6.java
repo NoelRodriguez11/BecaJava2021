@@ -7,8 +7,8 @@ public class ej6 {
 	public static void main(String[] args) {
 		
 		/*
-		 * 5. Programa que lee 4 números, y en el caso en el que el primero introducido sea igual al último, nos muestra
-		 * la media. En caso contrario no se mostrará nada.
+		 * 5. Programa que lee 4 nï¿½meros, y en el caso en el que el primero introducido sea igual al ï¿½ltimo, nos muestra
+		 * la media. En caso contrario no se mostrarï¿½ nada.
 		 * 
 		 * Autor: Noel
 		 * Fecha: 20-09-2021
@@ -22,7 +22,7 @@ public class ej6 {
 		
 		for (int contadorNumeros = 1; contadorNumeros <= 4; contadorNumeros++) {
 			
-			System.out.println("Introduzca número");
+			System.out.println("Introduzca nï¿½mero");
 			
 			if(contadorNumeros == 1) {
 				primero = sc.nextInt();
