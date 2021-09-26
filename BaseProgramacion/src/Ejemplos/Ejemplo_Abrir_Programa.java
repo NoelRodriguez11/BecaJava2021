@@ -45,6 +45,7 @@ public class Ejemplo_Abrir_Programa {
 		}
 	}while(opcion!=3);
 
-	}
+		sc.close();	
+		}
 
 }

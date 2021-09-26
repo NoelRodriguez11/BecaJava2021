@@ -30,6 +30,7 @@ public class ej11 {
 		System.out.println("Introduce el nombre del alumno");
 		nombre = sc.nextLine();
 		
+		//Si el nombre introducido por consola es "fin" entonces salimos del bucle
 		if (nombre.equals("fin")) {
 			break;
 		}
@@ -37,15 +38,21 @@ public class ej11 {
 		System.out.println("Introduce el año del alumno");
 		ano_nacimiento = Integer.valueOf(sc.nextLine());
 		
+		//Restamos el año de nacimiento al año actual para saber la edad
 		edad = ano_actual - ano_nacimiento;
+		
+		//Y le añadimos la edad a la variable suma para hacer la media
 		suma += edad;
 		
+		//Si la edad resulta ser menor que otra ya previamente introducida entonces el nombre y la edad del alumno
+		//quedarán registradas en las variables menor y nombreMenor
 		if(edad < menor) {
 			menor = edad;
 			nombreMenor = nombre;
 		}
 		contador++;
 		
+		//Realizamos la media
 		media = (float)suma / (float)contador;
 		
 		}while(!nombre.equals("fin"));

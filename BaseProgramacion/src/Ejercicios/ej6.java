@@ -18,6 +18,8 @@ public class ej6 {
 		int ultimo = 0;
 		int suma = 0; //acumulador
 		float media;
+		
+		//Iniciamos el escaner
 		Scanner sc = new Scanner(System.in);
 		
 		for (int contadorNumeros = 1; contadorNumeros <= 4; contadorNumeros++) {
@@ -26,18 +28,25 @@ public class ej6 {
 			
 			if(contadorNumeros == 1) {
 				primero = sc.nextInt();
+				
+				//acumulamos el primer número a la suma
 				suma = suma + primero;
 			}
 			
 			if(contadorNumeros == 4) {
 				ultimo = sc.nextInt();
+				
+				//acumulamos el último número a la suma
 				suma = suma + ultimo;
 			}
 			
-			if(contadorNumeros !=1 && contadorNumeros!=44) {
+			if(contadorNumeros !=1 && contadorNumeros!=4) {
 				suma = suma + sc.nextInt();
 			}
 		}
+		
+		/*Igualamos el primer número introducido con el último para compararlos, si son iguales hará una media
+		de todos los números introducidos */
 		if (primero == ultimo) {
 			media = suma / 4;
 			System.out.println("La media es " + media);

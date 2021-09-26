@@ -6,8 +6,8 @@ public class ej7 {
 	
 	public static void main(String[] args) {
 		/*
-		 * 7. Programa que pide el número de calificaciones a introducir, y una nota de corte. A continuación se introducirán
-		 * las calificaciones, para finalmente indicar cuántas calificaciones han igualado o superado la nota de corte.
+		 * 7. Programa que pide el nÃºmero de calificaciones a introducir, y una nota de corte. A continuaciÃ³n se introducirï¿½n
+		 * las calificaciones, para finalmente indicar cuÃ¡ntas calificaciones han igualado o superado la nota de corte.
 		 * 
 		 * Autor: Noel
 		 * Fecha: 20-09-2021
@@ -16,27 +16,29 @@ public class ej7 {
 		//Declaramos las variables
 		float nota;
 		float notaCorte;
-		int cantidadNotas;
+		int cantidadAsignaturas;
 		int contCalificaciones = 0;
 		Scanner sc = new Scanner(System.in);
 		
 		//Pedimos los datos
-		System.out.println("¿Cuántas notas desea introducir?");
-		cantidadNotas = sc.nextInt();
+		System.out.println("Â¿CuÃ¡ntas asignaturas desea introducir?");
+		cantidadAsignaturas = sc.nextInt();
 		
 		System.out.println("Introduzca nota de corte");
 		notaCorte = sc.nextFloat();
 		
-		//Calculamos
-		for (int contadorNotas = 1; contadorNotas <= cantidadNotas; contadorNotas++) {
+		//Iniciamos el bucle para introducir tantas notas como asignaturas hayamos introducido previamente
+		for (int contadorNotas = 1; contadorNotas <= cantidadAsignaturas; contadorNotas++) {
 			System.out.println("Introduzca nota:");
 			nota = sc.nextFloat();
 			
+			/*Si la nota introducida por el escaner es superior o igual a la nota de corte, 
+			entonces el nÃºmero de calificaciones superadas aumenta*/
 			if (nota >= notaCorte) {
 				contCalificaciones++;
 			}
 		}
-		System.out.println("El número de calificaciones que supera la nota de corte es " +contCalificaciones);
+		System.out.println("El nÃºmero de calificaciones que supera la nota de corte es " +contCalificaciones);
 		sc.close();
 	}
 }

@@ -7,8 +7,8 @@ public class ej4 {
 	public static void main(String[] args) {
 
 		/*
-		 * 4. Programa que muestra todos los divisores de un número introducido. Entre los divisores no se incluirá
-		 * el propio número
+		 * 4. Programa que muestra todos los divisores de un nï¿½mero introducido. Entre los divisores no se incluirï¿½
+		 * el propio nï¿½mero
 		 * 
 		 * Autor: Noel
 		 * Fecha: 20-09-2021
@@ -17,9 +17,11 @@ public class ej4 {
 		int numero;
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Introduce un número:");
+		System.out.println("Introduce un nï¿½mero:");
 		numero = sc.nextInt();
 		
+		//Iniciamos el bucle for y le decimos que se detenga una vez que la variable i sea un nÃºmero menor que
+		//el introducido por consola
 		for ( int i=1; i < numero; i++) {
 			
 			if (numero%i == 0) {
